@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\shane\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\80159b43b3c721eeb054bd74ce5228a3\\res\\values-is\\values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
