@@ -19,9 +19,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.amazonaws.mobile.client.Callback;
@@ -31,11 +36,16 @@ import com.amazonaws.mobileconnectors.iot.AWSIotMqttManager;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttNewMessageCallback;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttQos;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 
-public class PubSubActivity extends Activity {
+public class PubSubActivity extends Activity implements AdapterView.OnItemSelectedListener {
 
     static final String LOG_TAG = PubSubActivity.class.getCanonicalName();
 
@@ -44,10 +54,9 @@ public class PubSubActivity extends Activity {
     // Customer specific IoT endpoint
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com,
     private static final String CUSTOMER_SPECIFIC_IOT_ENDPOINT = "a2a4apg8zaw7mm-ats.iot.eu-west-1.amazonaws.com";
-
-    EditText txtTopic;
-    EditText txtMessage;
-
+    String topic;
+    Switch simpleSwitch1;
+    TextView lightData;
     TextView tvLastMessage;
     TextView tvClientId;
     TextView tvStatus;
@@ -62,6 +71,35 @@ public class PubSubActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        simpleSwitch1 = (Switch) findViewById(R.id.simpleSwitch1);
+
+        // Spinner element
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        // Spinner click listener
+        spinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> categories = new ArrayList<String>();
+        categories.add("5");
+        categories.add("10");
+        categories.add("15");
+        categories.add("20");
+        categories.add("25");
+        categories.add("30");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
+
+        topic = "$aws/things/ShanePi/shadow/update";
+
+        lightData = findViewById(R.id.light_value);
         tvLastMessage = findViewById(R.id.tvLastMessage);
         tvClientId = findViewById(R.id.tvClientId);
         tvStatus = findViewById(R.id.tvStatus);
@@ -128,6 +166,24 @@ public class PubSubActivity extends Activity {
             Log.e(LOG_TAG, "Connection error.", e);
             tvStatus.setText("Error! " + e.getMessage());
         }
+
+        simpleSwitch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String statusSwitch1;
+                if (simpleSwitch1.isChecked()) {
+                    statusSwitch1 = "{\"state\":{\"desired\":{\"lightStatus\":1}}}";
+                }
+                else {
+                    statusSwitch1 = "{\"state\":{\"desired\":{\"lightStatus\":0}}}";
+                }
+                try {
+                    mqttManager.publishString(statusSwitch1, topic, AWSIotMqttQos.QOS0);
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Publish error.", e);
+                }
+            }
+        });
     }
 
     public void connect(final View view) {
@@ -162,7 +218,7 @@ public class PubSubActivity extends Activity {
     public void subscribe() {
 
         try {
-            mqttManager.subscribeToTopic("$aws/things/ShanePi/shadow/update", AWSIotMqttQos.QOS0,
+            mqttManager.subscribeToTopic(topic, AWSIotMqttQos.QOS0,
                     new AWSIotMqttNewMessageCallback() {
                         @Override
                         public void onMessageArrived(final String topic, final byte[] data) {
@@ -174,6 +230,14 @@ public class PubSubActivity extends Activity {
                                         Log.d(LOG_TAG, "Message arrived:");
                                         Log.d(LOG_TAG, "   Topic: " + topic);
                                         Log.d(LOG_TAG, " Message: " + message);
+                                        try {
+                                            JSONObject obj = new JSONObject(message);
+                                            if (message.contains("light")){
+                                                lightData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("light"));
+                                            }
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
 
                                         tvLastMessage.setText(message);
 
@@ -196,5 +260,26 @@ public class PubSubActivity extends Activity {
         } catch (Exception e) {
             Log.e(LOG_TAG, "Disconnect error.", e);
         }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        String item = parent.getItemAtPosition(position).toString();
+        final String msg = "{\"state\":{\"desired\":{\"lightDelta\": "+item+"}}}";
+    //
+        try {
+            mqttManager.publishString(msg, topic, AWSIotMqttQos.QOS0);
+        } catch (Exception e) {
+            Log.e(LOG_TAG, "Publish error.", e);
+        }
+
+        // Showing selected spinner item
+        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

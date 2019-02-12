@@ -89,4 +89,43 @@
             android:gravity="center_vertical|top"
             android:text="N/A" />
     </LinearLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+        <TextView
+            android:id="@+id/light"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Light Sensor:" />
+        <TextView
+            android:id="@+id/light_value"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/light"
+            android:hint="DATA" />
+
+        <Switch
+            android:id="@+id/simpleSwitch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/light"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/light_value"
+            android:checked="false"
+            android:paddingLeft="16dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/simpleSwitch1" />
+    </RelativeLayout>
 </LinearLayout>

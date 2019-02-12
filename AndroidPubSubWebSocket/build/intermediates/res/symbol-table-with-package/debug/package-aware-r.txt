@@ -68,6 +68,8 @@ id icon_group
 id info
 id italic
 id large
+id light
+id light_value
 id line1
 id line3
 id normal
@@ -76,7 +78,9 @@ id notification_main_column
 id notification_main_column_container
 id right_icon
 id right_side
+id simpleSwitch1
 id small
+id spinner
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
