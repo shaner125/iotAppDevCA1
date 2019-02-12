@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shane\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\80159b43b3c721eeb054bd74ce5228a3\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Shane\\.gradle\\caches\\transforms-1\\files-1.1\\aws-android-sdk-auth-core-2.11.1.aar\\98f4c1f4a3b3b7a92b0f5de90060d865\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "5",
+                        "startOffsets": "56",
+                        "endLines": "8",
+                        "endColumns": "25",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "132",
+                        "startColumns": "4",
+                        "startOffsets": "7725",
+                        "endLines": "138",
+                        "endColumns": "25",
+                        "endOffsets": "7990"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shane\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\bfa9db558cecbefd985dfc461518264d\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,13,56,88,125,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,24 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\shane\\.gradle\\caches\\transforms-1\\files-1.1\\aws-android-sdk-auth-core-2.11.1.aar\\af89206e5e43ba669a6695dd43c7ac29\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "2",
-                        "startOffsets": "14",
-                        "endColumns": "88",
-                        "endOffsets": "100"
-                    },
-                    "to": {
-                        "startLines": "173",
-                        "startColumns": "4",
-                        "startOffsets": "10081",
-                        "endColumns": "90",
-                        "endOffsets": "10167"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -57,22 +59,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\shane\\.gradle\\caches\\transforms-1\\files-1.1\\aws-android-sdk-auth-core-2.11.1.aar\\af89206e5e43ba669a6695dd43c7ac29\\res\\values\\attrs.xml",
+                    "source": "C:\\Users\\Shane\\.gradle\\caches\\transforms-1\\files-1.1\\aws-android-sdk-auth-core-2.11.1.aar\\98f4c1f4a3b3b7a92b0f5de90060d865\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "5",
-                        "startOffsets": "56",
-                        "endLines": "8",
-                        "endColumns": "25",
-                        "endOffsets": "322"
+                        "startLines": "1",
+                        "startColumns": "2",
+                        "startOffsets": "14",
+                        "endColumns": "88",
+                        "endOffsets": "100"
                     },
                     "to": {
-                        "startLines": "132",
+                        "startLines": "173",
                         "startColumns": "4",
-                        "startOffsets": "7725",
-                        "endLines": "138",
-                        "endColumns": "25",
-                        "endOffsets": "7990"
+                        "startOffsets": "10081",
+                        "endColumns": "90",
+                        "endOffsets": "10167"
                     }
                 }
             ]

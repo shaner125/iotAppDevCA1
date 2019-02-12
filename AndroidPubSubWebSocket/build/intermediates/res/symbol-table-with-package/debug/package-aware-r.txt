@@ -61,8 +61,6 @@ id async
 id blocking
 id btnConnect
 id btnDisconnect
-id btnPublish
-id btnSubscribe
 id chronometer
 id forever
 id icon
@@ -89,9 +87,6 @@ id title
 id tvClientId
 id tvLastMessage
 id tvStatus
-id txtMessage
-id txtSubscribe
-id txtTopic
 integer status_bar_notification_info_maxnum
 layout activity_main
 layout notification_action

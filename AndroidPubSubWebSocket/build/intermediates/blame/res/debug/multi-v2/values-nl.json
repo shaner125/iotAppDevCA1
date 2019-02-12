@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+            "outputFile": "C:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shane\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\80159b43b3c721eeb054bd74ce5228a3\\res\\values-nl\\values-nl.xml",
+                    "source": "C:\\Users\\Shane\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\bfa9db558cecbefd985dfc461518264d\\res\\values-nl\\values-nl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

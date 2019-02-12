@@ -45,7 +45,6 @@ public class PubSubActivity extends Activity {
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com,
     private static final String CUSTOMER_SPECIFIC_IOT_ENDPOINT = "a2a4apg8zaw7mm-ats.iot.eu-west-1.amazonaws.com";
 
-    EditText txtSubscribe;
     EditText txtTopic;
     EditText txtMessage;
 
@@ -63,16 +62,12 @@ public class PubSubActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtSubscribe = findViewById(R.id.txtSubscribe);
-        txtTopic = findViewById(R.id.txtTopic);
-        txtMessage = findViewById(R.id.txtMessage);
-
         tvLastMessage = findViewById(R.id.tvLastMessage);
         tvClientId = findViewById(R.id.tvClientId);
         tvStatus = findViewById(R.id.tvStatus);
 
         btnConnect = findViewById(R.id.btnConnect);
-        btnConnect.setEnabled(false);
+        btnConnect.setEnabled(true);
 
         // MQTT client IDs are required to be unique per AWS IoT account.
         // This UUID is "practically unique" but does not _guarantee_
@@ -108,18 +103,15 @@ public class PubSubActivity extends Activity {
         mqttManager = new AWSIotMqttManager(clientId, CUSTOMER_SPECIFIC_IOT_ENDPOINT);
 
         // Enable button once all clients are ready
-        btnConnect.setEnabled(true);
-    }
-
-    public void connect(final View view) {
-        Log.d(LOG_TAG, "clientId = " + clientId);
-
         try {
             mqttManager.connect(AWSMobileClient.getInstance(), new AWSIotMqttClientStatusCallback() {
                 @Override
                 public void onStatusChanged(final AWSIotMqttClientStatus status,
                                             final Throwable throwable) {
                     Log.d(LOG_TAG, "Status = " + String.valueOf(status));
+                    if(String.valueOf(status).equals("Connected")){
+                        subscribe();
+                    }
 
                     runOnUiThread(new Runnable() {
                         @Override
@@ -138,13 +130,39 @@ public class PubSubActivity extends Activity {
         }
     }
 
-    public void subscribe(final View view) {
-        final String topic = txtSubscribe.getText().toString();
+    public void connect(final View view) {
+        Log.d(LOG_TAG, "clientId = " + clientId);
+        try {
+            mqttManager.connect(AWSMobileClient.getInstance(), new AWSIotMqttClientStatusCallback() {
+                @Override
+                public void onStatusChanged(final AWSIotMqttClientStatus status,
+                                            final Throwable throwable) {
+                    Log.d(LOG_TAG, "Status = " + String.valueOf(status));
+                    if(String.valueOf(status).equals("Connected")){
+                        subscribe();
+                    }
 
-        Log.d(LOG_TAG, "topic = " + topic);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            tvStatus.setText(status.toString());
+                            if (throwable != null) {
+                                Log.e(LOG_TAG, "Connection error.", throwable);
+                            }
+                        }
+                    });
+                }
+            });
+        } catch (final Exception e) {
+            Log.e(LOG_TAG, "Connection error.", e);
+            tvStatus.setText("Error! " + e.getMessage());
+        }
+    }
+
+    public void subscribe() {
 
         try {
-            mqttManager.subscribeToTopic(topic, AWSIotMqttQos.QOS0,
+            mqttManager.subscribeToTopic("$aws/things/ShanePi/shadow/update", AWSIotMqttQos.QOS0,
                     new AWSIotMqttNewMessageCallback() {
                         @Override
                         public void onMessageArrived(final String topic, final byte[] data) {
@@ -171,20 +189,10 @@ public class PubSubActivity extends Activity {
         }
     }
 
-    public void publish(final View view) {
-        final String topic = txtTopic.getText().toString();
-        final String msg = txtMessage.getText().toString();
-
-        try {
-            mqttManager.publishString(msg, topic, AWSIotMqttQos.QOS0);
-        } catch (Exception e) {
-            Log.e(LOG_TAG, "Publish error.", e);
-        }
-    }
-
     public void disconnect(final View view) {
         try {
             mqttManager.disconnect();
+            btnConnect.setEnabled(true);
         } catch (Exception e) {
             Log.e(LOG_TAG, "Disconnect error.", e);
         }

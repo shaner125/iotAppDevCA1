@@ -1,4 +1,4 @@
-#Tue Feb 05 18:03:07 GMT 2019
-base.0=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+#Mon Feb 11 22:06:35 GMT 2019
+base.0=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.0=classes.dex
 renamed.0=classes.dex

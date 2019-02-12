@@ -1,86 +1,86 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\af89206e5e43ba669a6695dd43c7ac29\AndroidManifest.xml:2:1-4:80
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c2d52927184ac006457905f5fe5b1412\AndroidManifest.xml:17:1-25:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\379b6d94437505ef089cd0d2ff095b91\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:17:1-24:12
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\98f4c1f4a3b3b7a92b0f5de90060d865\AndroidManifest.xml:2:1-4:80
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\645a28e54692d427f5bb9f20102ac12a\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7d3c2fde82377d5a43901c52e1aa255e\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:3:5-56
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:3:5-56
 	android:versionName
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:7:5-67
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:6:5-66
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:7:5-67
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:6:5-66
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:9:5-20:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c2d52927184ac006457905f5fe5b1412\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c2d52927184ac006457905f5fe5b1412\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:9:5-20:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\645a28e54692d427f5bb9f20102ac12a\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\645a28e54692d427f5bb9f20102ac12a\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:12:9-41
 	android:icon
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:11:9-45
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:11:9-45
 	android:allowBackup
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:10:9-35
 activity#com.amazonaws.demo.androidpubsubwebsocket.PubSubActivity
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:13:19-90
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:13:19-90
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml:17:27-74
 uses-sdk
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:4:5-73
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:4:5-73
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\80159b43b3c721eeb054bd74ce5228a3\AndroidManifest.xml:20:5-44
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\af89206e5e43ba669a6695dd43c7ac29\AndroidManifest.xml:4:1-69
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\af89206e5e43ba669a6695dd43c7ac29\AndroidManifest.xml:4:1-69
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c2d52927184ac006457905f5fe5b1412\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\c2d52927184ac006457905f5fe5b1412\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\379b6d94437505ef089cd0d2ff095b91\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\379b6d94437505ef089cd0d2ff095b91\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:4:5-73
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:4:5-73
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfa9db558cecbefd985dfc461518264d\AndroidManifest.xml:20:5-44
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\98f4c1f4a3b3b7a92b0f5de90060d865\AndroidManifest.xml:4:1-69
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.11.1.aar\98f4c1f4a3b3b7a92b0f5de90060d865\AndroidManifest.xml:4:1-69
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\645a28e54692d427f5bb9f20102ac12a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\645a28e54692d427f5bb9f20102ac12a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7d3c2fde82377d5a43901c52e1aa255e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7d3c2fde82377d5a43901c52e1aa255e\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		ADDED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
-		INJECTED from C:\Users\shane\OneDrive\Documents\College\4th Year\IoTAppDev\Assignment1\aws-sdk-android-samples\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:7:5-78
+ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:7:5-78
 	android:name
-		ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\17d1dc0cb8b10378c02b44f0281a0d4e\AndroidManifest.xml:7:22-76
+		ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.11.1] C:\Users\Shane\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.11.1.aar\7d02fa4d691ba722d543f095bfcaa99f\AndroidManifest.xml:7:22-76

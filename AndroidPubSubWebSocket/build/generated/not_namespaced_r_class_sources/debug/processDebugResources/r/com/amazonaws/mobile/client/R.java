@@ -37,18 +37,18 @@ public final class R {
         private id() {}
 
         public static final int action_divider = 0x7f050001;
-        public static final int chronometer = 0x7f05000b;
-        public static final int icon = 0x7f05000d;
-        public static final int info = 0x7f05000f;
-        public static final int large = 0x7f050011;
-        public static final int line1 = 0x7f050012;
-        public static final int line3 = 0x7f050013;
-        public static final int normal = 0x7f050014;
-        public static final int small = 0x7f05001a;
-        public static final int text = 0x7f05001e;
-        public static final int text2 = 0x7f05001f;
-        public static final int time = 0x7f050020;
-        public static final int title = 0x7f050021;
+        public static final int chronometer = 0x7f050009;
+        public static final int icon = 0x7f05000b;
+        public static final int info = 0x7f05000d;
+        public static final int large = 0x7f05000f;
+        public static final int line1 = 0x7f050010;
+        public static final int line3 = 0x7f050011;
+        public static final int normal = 0x7f050012;
+        public static final int small = 0x7f050018;
+        public static final int text = 0x7f05001c;
+        public static final int text2 = 0x7f05001d;
+        public static final int time = 0x7f05001e;
+        public static final int title = 0x7f05001f;
     }
     public static final class integer {
         private integer() {}

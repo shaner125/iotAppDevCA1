@@ -1,18 +1,18 @@
 #Internal package file, do not edit.
-#Tue Feb 05 18:03:16 GMT 2019
+#Mon Feb 11 22:51:06 GMT 2019
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
 0.baseType=DIRECTORY
 10.path=classes.dex
 5.baseType=DIRECTORY
-1.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+1.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 8.path=classes.dex
-3.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+3.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 4.set=DEX
-5.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-7.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-9.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+5.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+7.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+9.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\21
 1.baseType=DIRECTORY
 0.set=DEX
 6.baseType=DIRECTORY
@@ -25,16 +25,16 @@
 3.path=classes.dex
 10.set=DEX
 5.path=classes.dex
-0.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+0.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\17
 7.path=classes.dex
 9.path=classes.dex
 6.set=DEX
-2.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-4.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+2.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+4.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 3.baseType=DIRECTORY
-6.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-10.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\21
-8.base=C\:\\Users\\shane\\OneDrive\\Documents\\College\\4th Year\\IoTAppDev\\Assignment1\\aws-sdk-android-samples\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+6.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+10.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+8.base=C\:\\Users\\Shane\\Documents\\College\\IOT_Appdev\\CA1\\iotAppDevCA1\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 2.set=DEX
 8.baseType=DIRECTORY
 9.set=DEX
