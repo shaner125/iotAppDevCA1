@@ -42,14 +42,14 @@ public final class R {
         public static final int info = 0x7f05000d;
         public static final int large = 0x7f05000f;
         public static final int light = 0x7f050010;
-        public static final int line1 = 0x7f050012;
-        public static final int line3 = 0x7f050013;
-        public static final int normal = 0x7f050014;
-        public static final int small = 0x7f05001b;
-        public static final int text = 0x7f050020;
-        public static final int text2 = 0x7f050021;
-        public static final int time = 0x7f050022;
-        public static final int title = 0x7f050023;
+        public static final int line1 = 0x7f050015;
+        public static final int line3 = 0x7f050016;
+        public static final int normal = 0x7f050017;
+        public static final int small = 0x7f050022;
+        public static final int text = 0x7f05002b;
+        public static final int text2 = 0x7f05002c;
+        public static final int time = 0x7f05002d;
+        public static final int title = 0x7f05002e;
     }
     public static final class integer {
         private integer() {}

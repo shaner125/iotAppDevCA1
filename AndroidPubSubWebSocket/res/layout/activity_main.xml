@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
@@ -89,43 +90,164 @@
             android:gravity="center_vertical|top"
             android:text="N/A" />
     </LinearLayout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingTop="20dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp" >
+        android:orientation="horizontal" >
+
         <TextView
             android:id="@+id/light"
-            android:paddingTop="10dp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Light Sensor:" />
+            android:layout_weight="2"
+            android:text="Light:" />
         <TextView
             android:id="@+id/light_value"
-            android:paddingTop="10dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/light"
-            android:hint="DATA" />
+            android:layout_weight="2"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="DATA" />
 
         <Switch
-            android:id="@+id/simpleSwitch1"
-            android:layout_width="wrap_content"
+            android:id="@+id/lightSwitch"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/light"
-            android:layout_gravity="center"
-            android:layout_marginBottom="2dp"
-            android:layout_toRightOf="@+id/light_value"
-            android:checked="false"
-            android:paddingLeft="16dp" />
+            android:layout_weight="2"
+            android:text="On/Off"
+            android:checked="true"/>
+        <TextView
+            android:id="@+id/lightSampleRate_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sample Rate:" />
 
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="wrap_content"
+            android:id="@+id/lightSpinner"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/simpleSwitch1" />
-    </RelativeLayout>
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/sound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sound:" />
+        <TextView
+            android:id="@+id/sound_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="DATA" />
+
+        <Switch
+            android:id="@+id/soundSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="On/Off"
+            android:checked="true"/>
+        <TextView
+            android:id="@+id/soundSampleRate_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sample Rate:" />
+
+        <Spinner
+            android:id="@+id/soundSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/ultra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Ultra:" />
+        <TextView
+            android:id="@+id/ultra_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="DATA" />
+
+        <Switch
+            android:id="@+id/ultraSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="On/Off"
+            android:checked="true"/>
+        <TextView
+            android:id="@+id/ultraSampleRate_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sample Rate:" />
+
+        <Spinner
+            android:id="@+id/ultraSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/rotary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Rotary:" />
+        <TextView
+            android:id="@+id/rotary_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="DATA" />
+
+        <Switch
+            android:id="@+id/rotarySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="On/Off"
+            android:checked="true"/>
+        <TextView
+            android:id="@+id/rotarySampleRate_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sample Rate:" />
+
+        <Spinner
+            android:id="@+id/rotarySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
 </LinearLayout>

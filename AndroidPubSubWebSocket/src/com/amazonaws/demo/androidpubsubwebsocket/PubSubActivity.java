@@ -15,14 +15,15 @@
 
 package com.amazonaws.demo.androidpubsubwebsocket;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -45,7 +46,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 
-public class PubSubActivity extends Activity implements AdapterView.OnItemSelectedListener {
+public class PubSubActivity extends Activity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
     static final String LOG_TAG = PubSubActivity.class.getCanonicalName();
 
@@ -55,8 +56,19 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com,
     private static final String CUSTOMER_SPECIFIC_IOT_ENDPOINT = "a2a4apg8zaw7mm-ats.iot.eu-west-1.amazonaws.com";
     String topic;
-    Switch simpleSwitch1;
+    Switch lightSwitch;
+    Switch soundSwitch;
+    Switch ultraSwitch;
+    Switch rotarySwitch;
+    Spinner lightSpinner;
+    Spinner soundSpinner;
+    Spinner ultraSpinner;
+    Spinner rotarySpinner;
     TextView lightData;
+    TextView soundData;
+    TextView ultraData;
+    TextView rotaryData;
+
     TextView tvLastMessage;
     TextView tvClientId;
     TextView tvStatus;
@@ -71,13 +83,22 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        simpleSwitch1 = (Switch) findViewById(R.id.simpleSwitch1);
+        lightSwitch = (Switch) findViewById(R.id.lightSwitch);
+        soundSwitch = (Switch) findViewById(R.id.soundSwitch);
+        ultraSwitch = (Switch) findViewById(R.id.ultraSwitch);
+        rotarySwitch = (Switch) findViewById(R.id.rotarySwitch);
 
         // Spinner element
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        lightSpinner = (Spinner) findViewById(R.id.lightSpinner);
+        soundSpinner = (Spinner) findViewById(R.id.soundSpinner);
+        ultraSpinner = (Spinner) findViewById(R.id.ultraSpinner);
+        rotarySpinner = (Spinner) findViewById(R.id.rotarySpinner);
 
         // Spinner click listener
-        spinner.setOnItemSelectedListener(this);
+        lightSpinner.setOnItemSelectedListener(this);
+        soundSpinner.setOnItemSelectedListener(this);
+        ultraSpinner.setOnItemSelectedListener(this);
+        rotarySpinner.setOnItemSelectedListener(this);
 
         // Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
@@ -95,11 +116,18 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // attaching data adapter to spinner
-        spinner.setAdapter(dataAdapter);
+        lightSpinner.setAdapter(dataAdapter);
+        soundSpinner.setAdapter(dataAdapter);
+        ultraSpinner.setAdapter(dataAdapter);
+        rotarySpinner.setAdapter(dataAdapter);
 
         topic = "$aws/things/ShanePi/shadow/update";
 
         lightData = findViewById(R.id.light_value);
+        soundData = findViewById(R.id.sound_value);
+        ultraData = findViewById(R.id.ultra_value);
+        rotaryData = findViewById(R.id.rotary_value);
+
         tvLastMessage = findViewById(R.id.tvLastMessage);
         tvClientId = findViewById(R.id.tvClientId);
         tvStatus = findViewById(R.id.tvStatus);
@@ -167,23 +195,73 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
             tvStatus.setText("Error! " + e.getMessage());
         }
 
-        simpleSwitch1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String statusSwitch1;
-                if (simpleSwitch1.isChecked()) {
-                    statusSwitch1 = "{\"state\":{\"desired\":{\"lightStatus\":1}}}";
+        lightSwitch.setOnClickListener(this);
+        soundSwitch.setOnClickListener(this);
+        ultraSwitch.setOnClickListener(this);
+        rotarySwitch.setOnClickListener(this);
+    }
+
+    @SuppressLint("ResourceAsColor")
+    @Override
+    public void onClick(View v) {
+        // define the button that invoked the listener by id
+        String statusSwitch = new String();
+        switch (v.getId()) {
+            case R.id.lightSwitch:
+                if (lightSwitch.isChecked()) {
+                    statusSwitch = "{\"state\":{\"desired\":{\"lightStatus\":1}}}";
+                    lightData.setText("Waiting...");
+                    lightData.setTextColor(Color.parseColor("#669900"));
                 }
                 else {
-                    statusSwitch1 = "{\"state\":{\"desired\":{\"lightStatus\":0}}}";
+                    statusSwitch = "{\"state\":{\"desired\":{\"lightStatus\":0}}}";
+                    lightData.setText("OFF");
+                    lightData.setTextColor(Color.RED);
                 }
-                try {
-                    mqttManager.publishString(statusSwitch1, topic, AWSIotMqttQos.QOS0);
-                } catch (Exception e) {
-                    Log.e(LOG_TAG, "Publish error.", e);
+                break;
+            case R.id.soundSwitch:
+                if (soundSwitch.isChecked()) {
+                    statusSwitch = "{\"state\":{\"desired\":{\"soundStatus\":1}}}";
+                    soundData.setText("Waiting...");
+                    soundData.setTextColor(Color.parseColor("#669900"));
                 }
+                else {
+                    statusSwitch = "{\"state\":{\"desired\":{\"soundStatus\":0}}}";
+                    soundData.setText("OFF");
+                    soundData.setTextColor(Color.RED);
+                }
+                break;
+            case R.id.ultraSwitch:
+                if (ultraSwitch.isChecked()) {
+                    statusSwitch = "{\"state\":{\"desired\":{\"ultraStatus\":1}}}";
+                    ultraData.setText("Waiting...");
+                    ultraData.setTextColor(Color.parseColor("#669900"));
+                }
+                else {
+                    statusSwitch = "{\"state\":{\"desired\":{\"ultraStatus\":0}}}";
+                    ultraData.setText("OFF");
+                    ultraData.setTextColor(Color.RED);
+                }
+                break;
+            case R.id.rotarySwitch:
+                if (rotarySwitch.isChecked()) {
+                    statusSwitch = "{\"state\":{\"desired\":{\"rotaryStatus\":1}}}";
+                    rotaryData.setText("Waiting...");
+                    rotaryData.setTextColor(Color.parseColor("#669900"));
+                }
+                else {
+                    statusSwitch = "{\"state\":{\"desired\":{\"rotaryStatus\":0}}}";
+                    rotaryData.setText("OFF");
+                    rotaryData.setTextColor(Color.RED);
+                }
+                break;
+        }
+        try {
+            mqttManager.publishString(statusSwitch, topic, AWSIotMqttQos.QOS0);
             }
-        });
+            catch (Exception e) {
+                    Log.e(LOG_TAG, "Publish error.", e);
+            }
     }
 
     public void connect(final View view) {
@@ -232,8 +310,17 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
                                         Log.d(LOG_TAG, " Message: " + message);
                                         try {
                                             JSONObject obj = new JSONObject(message);
-                                            if (message.contains("light")){
-                                                lightData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("light"));
+                                            if (message.contains("lightValue") && lightSwitch.isChecked()){
+                                                lightData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("lightValue"));
+                                            }
+                                            else if (message.contains("soundValue") && soundSwitch.isChecked()){
+                                                soundData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("soundValue"));
+                                            }
+                                            else if (message.contains("ultraValue") && ultraSwitch.isChecked()){
+                                                ultraData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("ultraValue"));
+                                            }
+                                            else if (message.contains("rotaryValue") && rotarySwitch.isChecked()){
+                                                rotaryData.setText(obj.getJSONObject("state").getJSONObject("reported").getString("rotaryValue"));
                                             }
                                         } catch (JSONException e) {
                                             e.printStackTrace();
@@ -266,7 +353,22 @@ public class PubSubActivity extends Activity implements AdapterView.OnItemSelect
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
         String item = parent.getItemAtPosition(position).toString();
-        final String msg = "{\"state\":{\"desired\":{\"lightDelta\": "+item+"}}}";
+        int uid = parent.getId();
+        String msg = new String();
+        switch(uid){
+            case R.id.lightSpinner:
+                msg = "{\"state\":{\"desired\":{\"lightDelta\": "+item+"}}}";
+                break;
+            case R.id.soundSpinner:
+                msg = "{\"state\":{\"desired\":{\"soundDelta\": "+item+"}}}";
+                break;
+            case R.id.ultraSpinner:
+                msg = "{\"state\":{\"desired\":{\"ultraDelta\": "+item+"}}}";
+                break;
+            case R.id.rotarySpinner:
+                msg = "{\"state\":{\"desired\":{\"rotaryDelta\": "+item+"}}}";
+                break;
+        }
     //
         try {
             mqttManager.publishString(msg, topic, AWSIotMqttQos.QOS0);

@@ -19,7 +19,7 @@ public final class R {
         private id() {}
 
         public static final int large = 0x7f05000f;
-        public static final int small = 0x7f05001b;
+        public static final int small = 0x7f050022;
     }
     public static final class string {
         private string() {}

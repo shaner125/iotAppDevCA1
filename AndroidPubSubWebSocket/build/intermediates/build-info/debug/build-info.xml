@@ -5,42 +5,32 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
     plugin-version="3.2.1"
-    timestamp="1550015700848"
+    timestamp="1550103503783"
     token="-1672286086062874632"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="272" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="69" />
+        duration="0" />
     <task
         name="verifier"
-        duration="23" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
+        location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\instant-run-apk\debug\AndroidPubSubWebSocket-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1550012268935"
+        timestamp="1550074451243"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\instant-run-apk\debug\AndroidPubSubWebSocket-debug.apk"
             type="SPLIT_MAIN" />
@@ -68,11 +58,20 @@
         <artifact
             location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1550013550648"
+        timestamp="1550080542747"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -80,18 +79,23 @@
         <artifact
             location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\instant-run-apk\debug\AndroidPubSubWebSocket-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1550015700848"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1550102153081"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1550103503783"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Shane\Documents\College\IOT_Appdev\CA1\iotAppDevCA1\AndroidPubSubWebSocket\build\intermediates\instant-run-apk\debug\AndroidPubSubWebSocket-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
